@@ -15,11 +15,11 @@ In 2011, the German Traffic Signs Benchmark team conducted a project about traff
 - All of the files are categorized into 43 different classes.
 ### Feature Selection:
 Overall, there are two techniques of feature selection including:
-**1. Univariate Feature Selection:** 
+1. Univariate Feature Selection:
 - This is the technique that selects the best features only one time based on our preference.
 - The desired number of best features is chosen either by a certain number M out of N features or by m percent of N features. The second option is implemented in the univariate feature selection step of this project due to the huge number of the features.
 - The criteria to choose the best features bases on the ratio of the variance between the mean samples and the variance within the sample. The larger the ratio is, the better the classification will be. The f-contribution test is used to compute the ratio for this multi-class classification project.
-**2. Recursive Feature Selection:** 
+2. Recursive Feature Selection:
 - This is the technique that selects features recursively by considering smaller and smaller sets of features based on the assigned weights of the features computed from an estimator. The approach will initially work on the whole set to choose the best features and leave out the least important features, and then repeat the computation process on the set of the least important one until the desired number of features is reached. 
 - The estimator used for this project is k-fold cross-validation.
 **Note:** This project requires a CPU with huge memory or even a GPU in order to run the recursive technique because it has to compute the weights of 11,584 features per image and the dataset has 2251 images.
