@@ -30,8 +30,8 @@ filenames = []
 
 def openPreprocessedImages():
     global filenames
-
-    rootpath = "/Users/huongpham/AnacondaProjects/PR-Project/precomputed-dataset/train/"
+    # The root path can be changed to your local directory where the project is downloaded
+    rootpath = "/Users/huongpham/AnacondaProjects/PR-Project/precomputed-dataset/"
     dataset = dict()  # Use an empty dictionary to store all training data
     # Access 43 class ID folders to get the features of the images (in .txt)
     for c in range(0, 43):
