@@ -24,6 +24,7 @@ Overall, there are two techniques of feature selection including:
 2. Recursive Feature Selection:
 - This is the technique that selects features recursively by considering smaller and smaller sets of features based on the assigned weights of the features computed from an estimator. The approach will initially work on the whole set to choose the best features and leave out the least important features, and then repeat the computation process on the set of the least important one until the desired number of features is reached. 
 - The estimator used for this project is k-fold cross-validation.
+
 **Note:** This project requires a CPU with huge memory or even a GPU in order to run the recursive technique because it has to compute the weights of 11,584 features per image and the dataset has 2251 images.
 ### Feature Extraction:
 - Because the original number of features is enormously huge, it still needs reducing after feature selection. Therefore, I also performed Principal Components Analysis (PCA) to transform and reduce the dimension of the feature vector in a hope that it will eliminate more unnecessary features and benefit the classification process. 
