@@ -9,10 +9,12 @@
 In 2011, the German Traffic Signs Benchmark team conducted a project about traffic road sign detection in German. The project was intensive and impressive because 
 * The dataset has a collection of more than 50,000 images of 43 different road signs and all of the images were pre-computed in different sizes for 12 features. 
 * Each image has an overall feature vector of 11,584 features.
-### Data collection:
+### Data collection & Preprocessing:
 - The dataset used in this project is the training dataset of the mentioned related work and it is splitted into two subsets for training and testing purposes. 
 - The dataset is a collection of 2251 .txt files, each of which contains 11,584 pre-computed Haar-like features for one image. If you are interested, you can download [here](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset#Pre-calculated_feature).
 - All of the files are categorized into 43 different classes.
+#### Data preprocessing:
+The features are converted into the standard by removing the mean and scaling to unit variance
 ### Feature Selection:
 Overall, there are two techniques of feature selection including:
 1. Univariate Feature Selection:
