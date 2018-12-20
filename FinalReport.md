@@ -11,7 +11,7 @@ In 2011, the German Traffic Signs Benchmark team conducted a project about traff
 * Each image has an overall feature vector of 11,584 features.
 ### Data collection:
 - The dataset used in this project is the training dataset of the mentioned related work and it is splitted into two subsets for training and testing purposes. 
-- The dataset is a collection of 2251 .txt files, each of which contains 11,584 pre-computed Haar-like features for one image.
+- The dataset is a collection of 2251 .txt files, each of which contains 11,584 pre-computed Haar-like features for one image. If you are interested, you can download [here](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset#Pre-calculated_feature).
 - All of the files are categorized into 43 different classes.
 ### Feature Selection:
 Overall, there are two techniques of feature selection including:
@@ -29,12 +29,13 @@ Overall, there are two techniques of feature selection including:
 - The desired number of components set by default is the minimum number between the number of samples and the number of features subtracted by 1, which is 2250 components. 
 ### Classification Methods:
 There are several classifiers for training and testing the data. I chose two methods to implement. 
-1. Random forest tree classification 
-2. k-nearest neighbor classification (The depth of the random forest tree is as default 2. The number of neighbor is 10.)
+1.  Random forest tree classification 
+2.  k-nearest neighbor classification (The depth of the random forest tree is as default 2. The number of neighbor is 10.)
 ### Results:
-The below table shows the accuracy rate (in percentage) of the random forest tree classification (RFC) with and without applying PCA for the dataset with various sizes of selected features
+The below table shows the accuracy rate (in percentage) of the random forest tree classification (RFC) with and without applying PCA for the dataset with various sizes of selected features:
+
 SelectPercentile(percentile=?) (%) | Second Header | First Header 
----------------------------------- | ------------- | -------------
+---------------------------------- | :-------------: | :-------------:
 10.0 | 81.481 | 23.259 
 15.0 | 64.889 | 61.778
 20.0 | 88.296 | 46.667
